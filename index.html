@@ -89,7 +89,7 @@
         <!-- content begin -->
         <div id="content" class="no-bottom no-top">
 		
-			<section id="section-hero" class="full-height no-padding text-light" data-speed="5" data-type="background">
+			<section id="section-hero" class="max-w-[1344px] h-[680px] full-height no-padding text-light" data-speed="5" data-type="background">
                 <div class="de-video-container">
                     <div class="de-video-content">
                         <div class="container">
@@ -108,7 +108,25 @@
 								<a href="" class="btn-custom text-white scroll-to">To Be Continued</a>
                                 
 							</div>
-                            <audio autoplay="autoplay" loop="loop" controls="controls" id="player"><source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3"></audio>
+
+
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer" class="aplayer"  data-autoplay="true"></div>
+<meting-js
+name="Normal No More"
+artist="TYSM"
+url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+cover="https://i.scdn.co/image/ab67616d00001e028c40b5aab598b176ef663caa">
+</meting-js>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+
+
+
+
 						</div>
 					</div>
                     </div>
@@ -124,8 +142,11 @@
 
             </section>
 
+        <!-- footer close -->
+
         </div>
     </div>
+
 
     <!-- Javascript Files
     ================================================== -->
